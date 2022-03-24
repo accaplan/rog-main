@@ -23,7 +23,7 @@ class Sanity {
   previewClient = createClient({
     ...this.config,
     useCdn: false,
-    token: process.env.SANITY_API_TOKEN,
+    token: "sk2u9wmjcn0Jsk6of5kAoXafud3l6fXFShtNOGmQmKED8I6PPYvuU9uiKraeLgWpmxHL3YupBpFC3cVJPj1cYsAmTC1PqPU75Dxs0QHRJLJRqPoGAk39VJmOaUflBPo1t7lxHRAdVRlVClFLWzeuBuKDls3Bnb9KRw4dYyUdmhX77AaIiz29",
   })
 
   urlFor = source => createImageUrlBuilder(this.config).image(source)
