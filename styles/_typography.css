@@ -1,0 +1,35 @@
+/* Content Stylings */
+.content {
+  & > p {
+    @apply mb-5 last-of-type:mb-0;
+  }
+
+  & > p > a {
+    @apply underline hover:text-opacity-25 focus:text-opacity-25;
+  }
+
+  & > h1, & > .h1 {
+    @apply text-3xl md:text-4xl mb-3;
+  }
+
+  & > h2, & > .h2 {
+    @apply text-xl md:text-2xl;
+  }
+
+  & * + h2 {
+    @apply mt-4 mb-2;
+  }
+}
+
+/* Heading Defaults */
+h1, .h1, h2, .h2, h3, .h3 {
+  @apply p-0 font-sans uppercase;
+}
+
+.font-sans {
+  @apply tracking-tight;
+}
+
+.font-mono {
+  @apply uppercase tracking-tight;
+}

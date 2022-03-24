@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Karrik-Regular';
+  src: url('../public/fonts/Karrik-Regular.woff2') format('woff2'),
+      url('../public/fonts/Karrik-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SelctricMono';
+  src: url('../public/fonts/SelectricMono.woff2') format('woff2'),
+      url('../public/fonts/selectricMono.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

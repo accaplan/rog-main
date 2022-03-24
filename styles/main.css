@@ -1,0 +1,35 @@
+/* Webfonts */
+@import '_fonts.css';
+
+/* Tailwind base/components */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Custom Style Imports */
+@import '_typography.css';
+@import '_locomotive.css';
+
+/* Tailwind Utilities */
+@import 'tailwindcss/utilities';
+
+
+/* Simple defaults */
+body {
+  @apply font-mono antialiased text-black bg-white;
+}
+
+.cover-image {
+  & img {
+    @apply object-cover object-center;
+  }
+}
+
+.image {
+  & span {
+    @apply will-change-transform !important;
+  }
+
+  & img {
+    @apply will-change-transform !important;
+  }
+}
