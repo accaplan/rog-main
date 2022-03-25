@@ -10,7 +10,7 @@ import {
 class Sanity {
   config = {
     dataset: 'production',
-    projectId: 'h2d8ivlz',
+    projectId: '5sfxruy2',
     useCdn: 'production',
     apiVersion: '2021-03-25',
   }
