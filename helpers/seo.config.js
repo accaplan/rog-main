@@ -1,16 +1,11 @@
 export default {
-  defaultTitle: 'Boilerplate | Next x Tailwind x Motion x Locomotive Scroll',
-  description: 'A simple Next.js starter kit with Tailwind, Framer Motion and Locomotive.',
-  titleTemplate: '%s | Next x Tailwind x Motion x Locomotive',
+  defaultTitle: 'Romance Office of Architecture and Design',
+  description: 'Studio working across mediums in spatial design, worldbuilding, scenography and environmental design.',
+  titleTemplate: 'Romance at work requires attention, take care.',
   openGraph: {
     type: 'website',
-    locale: 'en_GB',
-    url: 'https://sg-next-tailwind-motion.vercel.app/',
-    site_name: 'Next x Tailwind x Motion x Locomotive',
-  },
-  twitter: {
-    handle: '@samuelgoddard',
-    site: '@site',
-    cardType: 'summary_large_image',
+    locale: 'en_US',
+    url: 'https://rog-main.vercel.app/',
+    site_name: 'Romance Office',
   },
 };

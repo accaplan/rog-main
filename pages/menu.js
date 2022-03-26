@@ -29,11 +29,10 @@ export default function Menu() {
                   <li className="block mb-1"><Link href="/"><a className="underline">Home</a></Link></li>
                   <li className="block mb-1"><Link href="/work"><a className="underline">Work</a></Link></li>
                   <li className="block mb-1"><Link href="/studio"><a className="underline">Studio</a></Link></li>
-                  <li className="block mb-1"><Link href="/reel"><a className="underline">Reel</a></Link></li>
                 </ul>
                 <ul className="text-lg">
-                  <li className="block"><a href="https://www.instagram.com/jasonbaileystudio/?hl=en" target="_blank" rel="noopener noreferrer" className="underline">Instagram</a></li>
-                  <li className="block"><a href="mailto:hello@jasonbaileystudio.com" className="underline">Email</a></li>
+                  <li className="block"><a href="https://www.instagram.com/romanceoffice/?hl=en" target="_blank" rel="noopener noreferrer" className="underline">Instagram</a></li>
+                  <li className="block"><a href="mailto:info@romanceoffice.com" className="underline">Email</a></li>
                   <li className="block"><Link href="/terms"><a className="underline">Terms</a></Link></li>
                 </ul>
               </article>
