@@ -56,7 +56,6 @@ export default function Work(initialData) {
                     <article>
                       <div className="content max-w-3xl mb-4 font-mono">
                         <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl">Work</h1>
-                        <p>Some content here...</p>
                         <ul className="mt-6 font-sans tracking-tight text-xl">
                           {work.map((e, i) => {
                             return (

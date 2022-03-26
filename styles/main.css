@@ -24,6 +24,7 @@ body {
   }
 }
 
+
 .image {
   & span {
     @apply will-change-transform !important;

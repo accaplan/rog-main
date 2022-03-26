@@ -64,12 +64,6 @@ export default function Home(initialData) {
             </m.header>
 
             <m.main className="">
-              <Image 
-                image={home.backgroundImage}
-                focalPoint={home.backgroundImage.hotspot}
-                layout="fill"
-                className="fixed inset-0 z-0 object-cover object-enter"
-              />
 
               <article className="absolute bottom-0 top-auto md:bottom-auto md:top-0 right-0 left-0 z-10 w-full md:mt-[20vh] mb-[8vh] md:mb-0 p-3 indent-8 text-sm md:text-base leading-tight md:leading-tight grid grid-cols-9">
                 <div className="col-span-9 md:col-span-3 md:col-start-7 pr-12 xl:pr-20">
@@ -85,16 +79,16 @@ export default function Home(initialData) {
                 </div>
 
                 <div className="col-span-4 col-start-3 text-right md:space-x-7">
-                  <Link href="/work"><a className="text-sm md:text-xl xl:text-2xl leading-none md:leading-none xl:leading-none font-sans uppercase">
+                  <Link href="mailto:info@romanceoffice.com"><a className="text-sm md:text-xl xl:text-2xl leading-none md:leading-none xl:leading-none font-sans uppercase">
                     <span className="hidden md:inline-block underline">Contact</span>
                     <span className="inline-block md:hidden underline">Contact</span>
                   </a></Link>
 
-                  <Link href="/work"><a className="text-sm md:text-xl xl:text-2xl leading-none md:leading-none xl:leading-none font-sans uppercase underline ml-5">Instagram</a></Link>
+                  <Link href="https://www.instagram.com/romanceoffice/?hl=en"><a className="text-sm md:text-xl xl:text-2xl leading-none md:leading-none xl:leading-none font-sans uppercase underline ml-5">Instagram</a></Link>
                 </div>
                 
                 <div className="col-span-2 col-start-8 text-right">
-                  <Link href="/studio"><a className="text-2xl md:text-5xl xl:text-6xl 2xl:text-7xl leading-none md:leading-none xl:leading-none 2xl:leading-none font-sans uppercase underline">Info</a></Link>
+                  <Link href="/studio"><a className="text-2xl md:text-5xl xl:text-6xl 2xl:text-7xl leading-none md:leading-none xl:leading-none 2xl:leading-none font-sans uppercase underline">Studio</a></Link>
                 </div>
               </div>
             </m.footer>

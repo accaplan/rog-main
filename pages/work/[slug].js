@@ -75,9 +75,6 @@ export default function WorkSlug(initialData) {
                             })}
                           </>
                         )}
-
-                        <p>Some more stuff will eventually go here...</p>
-                        <h2>SOME OTHER STUFF?</h2>
                       </div>                    
                     </article>
                   </m.main>
