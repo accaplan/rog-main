@@ -8,6 +8,7 @@
 /* Custom Style Imports */
 @import '_typography.css';
 @import '_locomotive.css';
+@import '_carousel.css';
 
 /* Tailwind Utilities */
 @import 'tailwindcss/utilities';
@@ -15,7 +16,7 @@
 
 /* Simple defaults */
 body {
-  @apply font-mono antialiased text-black bg-white;
+  @apply font-mono antialiased text-black bg-white selection:bg-black selection:text-white;
 }
 
 .cover-image {
@@ -23,7 +24,6 @@ body {
     @apply object-cover object-center;
   }
 }
-
 
 .image {
   & span {
@@ -33,4 +33,8 @@ body {
   & img {
     @apply will-change-transform !important;
   }
+}
+
+.list-child li:nth-child(even) {
+  @apply bg-[#FBEDE1];
 }
