@@ -1,17 +1,11 @@
 import { useRef } from 'react'
 import Layout from '@/components/layout'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-import FancyLink from '@/components/fancyLink'
 import { fade } from '@/helpers/transitions'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import { NextSeo } from 'next-seo'
 import SanityPageService from '@/services/sanityPageService'
-import BlockContent from '@sanity/block-content-to-react'
-import Link from 'next/link'
-import Image from '@/components/image'
-import WorkCarousel from '@/components/work-carousel'
+import WorkListSection from '@/components/work-list'
 
 const query = `{
   "work": *[_type == "work"]{
@@ -55,12 +49,12 @@ const query = `{
 
 const pageService = new SanityPageService(query)
 
-export default function Work(initialData) {
+export default function WorkList(initialData) {
   const { data: { work } } = pageService.getPreviewHook(initialData)()
   const containerRef = useRef(null)
   return (
     <Layout>
-      <NextSeo title="Work" />
+      <NextSeo title="Work List" />
 
       <LocomotiveScrollProvider
         options={{ smooth: true, lerp: 0.1 }}
@@ -77,9 +71,10 @@ export default function Work(initialData) {
                 id="sticky"
               >
                 <m.main>
-                  <WorkCarousel work={work} />
+                  <WorkListSection work={work} />
                 </m.main>
               </m.div>
+
             </LazyMotion>
           </div>
         </div>
