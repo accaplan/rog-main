@@ -80,7 +80,7 @@ export default function Studio(initialData) {
         <div data-scroll-container ref={containerRef} id="scroll-container">
           <div data-scroll-section>
             <LazyMotion features={domAnimation}>
-              <Header/>
+              <Header className="flex space-x-1 p-3"/>
 
               <m.div
                 initial="initial"
@@ -91,13 +91,6 @@ export default function Studio(initialData) {
                   <div className="">
                     <div className="grid grid-cols-9 mb-12 md:mb-24 xl:mb-28 2xl:mb-40">
                       <div className="col-span-9 md:mr-[1vw] mt-[25vw] md:mt-0">
-                        <div className="absolute top-0 left-0 grid grid-cols-9 z-10">
-                          <div className="col-span-9 md:col-span-3 xl:col-span-2 bg-white pt-[20vw] p-3">
-                            <div className="w-10/12 leading-tight indent-8">
-                              <BlockContent serializers={{ container: ({ children }) => children }} blocks={studio.heroText} />
-                            </div>
-                          </div>
-                        </div>
                         
                         <div className="w-full h-[83vh] md:h-screen relative overflow-hidden flex flex-wrap flex-col">
                           <div className="grid grid-cols-9 flex-1 h-full">
@@ -112,10 +105,10 @@ export default function Studio(initialData) {
                             </div>
                           </div>
                           
-                          <h1 className="font-bold text-[11vw] leading-none grid grid-cols-9 mt-auto h-auto w-auto">
+                          {/* <h1 className="font-bold text-[11vw] leading-none grid grid-cols-9 mt-auto h-auto w-auto">
                             <span className="block col-start-1">The</span>
                             <span className="block col-start-7 col-span-3 text-right">Studio</span>
-                          </h1>
+                           </h1>*/}
                         </div>
                       </div>
                     </div>
@@ -137,10 +130,10 @@ export default function Studio(initialData) {
                       </div>
 
                       <h2 className="font-bold text-[7.5vw] leading-none mb-8 md:mb-16 xl:mb-20">
-                        <span className="block text-right">JBS Is a</span>
-                        <span className="block text-left">Photography + Production</span>
-                        <span className="block text-left">Studio Specialising In</span>
-                        <span className="block text-left">Lifestyle, Food + Drink</span>
+                        <span className="block text-right">Romance Office</span>
+                        <span className="block text-left">Architecture + Interiors</span>
+                        <span className="block text-left">Spatial Experiences</span>
+                        <span className="block text-left">Heartfelt + Human</span>
                       </h2>
 
                       <div className="grid grid-cols-9 gap-3 mb-12 md:mb-24 xl:mb-28 2xl:mb-40">
@@ -183,53 +176,28 @@ export default function Studio(initialData) {
                         </div>
                         
                         <div className="col-span-9 md:col-span-2 md:col-start-3 mb-6 md:mb-0">
-                          <span className="block leading-none mb-1">Bacardi</span>
-                          <span className="block leading-none mb-1">Banks Rum</span>
-                          <span className="block leading-none mb-1">Bar Swift</span>
-                          <span className="block leading-none mb-1">Bombay Sapphire</span>
-                          <span className="block leading-none mb-1">British Land</span>
-                          <span className="block leading-none mb-1">Coya</span>
-                          <span className="block leading-none mb-1">Dandelyan</span>
-                          <span className="block leading-none mb-1">Driscoll's Berries</span>
-                          <span className="block leading-none mb-1">Edition Hotels</span>
-                          <span className="block leading-none mb-1">ETM Group</span>
-                          <span className="block leading-none mb-1">Food & Travel Magazine</span>
-                          <span className="block leading-none mb-1">GQ Magazine</span>
-                          <span className="block leading-none mb-1">Grey Goose</span>
-                          <span className="block leading-none mb-1">Highland Spring</span>
-                          <span className="block leading-none mb-1">Imbibe Magazine</span>
-                          <span className="block leading-none mb-1">Lurpak Butter</span>
-                          <span className="block leading-none mb-1">Marriott Hotels</span>
-                          <span className="block leading-none mb-1">Martini</span>
-                          <span className="block leading-none mb-1">Mondrian London</span>
-                          <span className="block leading-none mb-1">Morgans Hotel Group</span>
-                          <span className="block leading-none mb-1">Nobu</span>
-                          <span className="block leading-none mb-1">Pernod Ricard</span>
-                          <span className="block leading-none mb-1">Punch Magazine</span>
-                          <span className="block leading-none mb-1">Punch Room</span>
-                          <span className="block leading-none mb-1">Red Rooster</span>
-                          <span className="block leading-none mb-1">St.Germain Liqueur</span>
-                          <span className="block leading-none mb-1">The Autograph Collection</span>
-                          <span className="block leading-none mb-1">The Curtain Hotel</span>
-                          <span className="block leading-none mb-1">The Glenlivet</span>
-                          <span className="block leading-none mb-1">Vogue</span>
+                          <span className="block leading-none mb-1">Superpotent</span>
+                          <span className="block leading-none mb-1">Dense Earth</span>
+                          <span className="block leading-none mb-1">Idle Hours Company</span>
+                          <span className="block leading-none mb-1">Leisure Cooperative</span>
+                          <span className="block leading-none mb-1">Infinite Places</span>
+                          <span className="block leading-none mb-1">Enough Structures</span>
                         </div>
 
                         <div className="col-span-9 md:col-span-2 md:col-start-5 mb-6 md:mb-0">
                           <span className="block leading-none mb-1">Furniture</span>
-                          <span className="block leading-none mb-1">Set Design</span>
-                          <span className="block leading-none mb-1">Drawing</span>
-                          <span className="block leading-none mb-1">Production</span>
-                          <span className="block leading-none mb-1">Retouching</span>
-                          <span className="block leading-none mb-1">Film</span>
+                          <span className="block leading-none mb-1">Scenography</span>
+                          <span className="block leading-none mb-1">Development</span>
+                          <span className="block leading-none mb-1">Cultural Production</span>
+                          <span className="block leading-none mb-1">Interiors</span>
+                          <span className="block leading-none mb-1">Architecture</span>
                         </div>
 
                         <div className="col-span-9 md:col-span-2 md:col-start-8">
                           <span className="block leading-none mb-1 underline">Email</span>
                           <span className="block leading-none mb-1 underline">Instagram</span>
-                          <span className="block leading-none mb-1 underline">Facebook</span>
-                          <span className="block leading-none mb-1 underline">Twitter</span>
-                          <span className="block leading-none mb-1 underline">Pinterest</span>
+                          <span className="block leading-none mb-1 underline">Zollstrasse 121 8004 Zurich</span>                          
+                          <span className="block leading-none mb-1 underline">(+41) 078 316 8600</span>
                         </div>
                       </div>
                     </div>
