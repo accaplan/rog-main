@@ -18,8 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'black': '#1f1f1f',
-        'white': '#FFF',
+        'black': '#93825e',
+        'white': '#f9f5f3',
         'example-color': {
           light: '#ffb288',
           DEFAULT: '#d18d67',
