@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
           <Link href={router.pathname == '/menu' ? '/' : '/menu'}>
             <a className="block w-[75px] p-3">
               <span className="block w-full h-[10px] mt-[0px] rotate-90 bg-current"></span>
-              <span className="block w-full h-[10px] mt-[0px] bg-current"></span>
+              <span className="block w-full h-[10px] mt-[0px] -translate-y-2 bg-current"></span>
             </a>
           </Link>
         </div>

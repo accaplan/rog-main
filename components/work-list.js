@@ -54,13 +54,13 @@ export default function WorkListSection({ work }) {
         <div className="w-[65.17vw] flex space-x-6 items-center">
           <div className="w-8/12 flex space-x-[2vw]">
             <FilterButton label={'all'} onClick={resetFilters} current={currentCat} />
-            <FilterButton label={'drinks'} onClick={() => updateCat('drinks')} current={currentCat} />
-            <FilterButton label={'food'} onClick={() => updateCat('food')} current={currentCat} />
-            <FilterButton label={'lifestyle'} onClick={() => updateCat('lifestyle')} current={currentCat} />
+            <FilterButton label={'architecture'} onClick={() => updateCat('architecture')} current={currentCat} />
+            <FilterButton label={'design'} onClick={() => updateCat('design')} current={currentCat} />
+            <FilterButton label={'craft'} onClick={() => updateCat('craft')} current={currentCat} />
           </div>
           <div className="w-4/12 justify-end flex space-x-[2vw]">
-            <FilterButton label={'still'} onClick={() => updateType('still')} current={currentType} />
-            <FilterButton label={'moving'} onClick={() => updateType('moving')} current={currentType} />
+            <FilterButton label={'model'} onClick={() => updateType('model')} current={currentType} />
+            <FilterButton label={'drawing'} onClick={() => updateType('drawing')} current={currentType} />
           </div>
         </div>
       </div>
