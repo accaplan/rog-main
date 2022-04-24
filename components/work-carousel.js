@@ -57,7 +57,7 @@ export default function WorkCarousel({ work }) {
               <FilterButton label={'all'} onClick={resetFilters} current={currentCat} />
               <FilterButton label={'architecture'} onClick={() => updateCat('architecture')} current={currentCat} />
               <FilterButton label={'design'} onClick={() => updateCat('design')} current={currentCat} />
-              <FilterButton label={'culture'} onClick={() => updateCat('culture')} current={currentCat} />
+              <FilterButton label={'craft'} onClick={() => updateCat('craft')} current={currentCat} />
             </div>
             <div className="w-8/10 justify-end flex space-x-[2vw]">
               <FilterButton label={'model'} onClick={() => updateType('model')} current={currentType} />
