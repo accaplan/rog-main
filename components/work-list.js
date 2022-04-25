@@ -84,10 +84,10 @@ export default function WorkListSection({ work }) {
                           />
                         )}
                       </span>
-                      <span className="block w-1/6">JBS.{(i + 1) < 10 && ('0')}{i + 1}</span>
+                      <span className="block w-1/6">Romance.{(i + 1) < 10 && ('0')}{i + 1}</span>
                       <span className="block w-1/5">{e.title}</span>
-                      <span className="block w-1/5">Some campaign title</span>
-                      <span className="block w-1/5">Location, UK</span>
+                      <span className="block w-1/5">Real work</span>
+                      <span className="block w-1/5">Worldwide</span>
                       <span className="block ml-auto text-right">2021—</span>
                     </a>
                   </Link>
